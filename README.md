@@ -5,5 +5,5 @@
 ### sudo pacman -S npm
 
 ## In project root folder run the following command to install dependencies
-### npm init
+### npm install
 
