@@ -38,3 +38,17 @@
   position: relative;
   padding: 10rem 0;
 }
+
+.section-register {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom,
+    $color-primary, $color-primary-light, $color-primary-dark);
+
+}
+
+.register {
+  background-image: url(../img/register-section.jpg);
+  // background-size: 100%; means same as : cover;
+  background-size: 100%;
+  height: 50rem;
+}
