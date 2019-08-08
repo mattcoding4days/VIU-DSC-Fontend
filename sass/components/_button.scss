@@ -16,9 +16,14 @@
     font-size: $default-font-size;
     border: none;
     cursor: pointer;
+
+    // change only for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     /* move the button up on hover */
     transform: translateY(-3px);
     /*          x  y   blurr   color*/
