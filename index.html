@@ -51,6 +51,20 @@ Markup uses the BEM notation
 </head>
 
   <body>
+   <!-------------------------- 
+     Navigation section 
+     Using the infamous "check box hack"
+     Just when you though Javascript was actually needed,
+     this is pure CSS
+     --------------------------------->
+    <div class="navigation">
+      <input class="navigation__checkbox" type="checkbox" id="navi-toggle">
+      label.navigation
+    </div>
+
+
+
+
    <!-------------------------- Hero section  --------------------------------->
     <header class="header">
       <div class="header__logo-box">
@@ -493,32 +507,32 @@ Markup uses the BEM notation
                 <!-- Radio Buttons -->
                 <div class="form__group">
                   <div class="form__radio-group">
-                    <input class="form__radio-input" type="radio" id="small" name="year">
-                    <label class="form__radio-label" for="small">
+                    <input class="form__radio-input" type="radio" id="year1" name="year">
+                    <label class="form__radio-label" for="year1">
                       <span class="form__radio-button"></span>
                       1st year
                     </label>
                   </div>
 
                   <div class="form__radio-group">
-                    <input class="form__radio-input" type="radio" id="small" name="year">
-                    <label class="form__radio-label" for="small">
+                    <input class="form__radio-input" type="radio" id="year2" name="year">
+                    <label class="form__radio-label" for="year2">
                       <span class="form__radio-button"></span>
                       2nd year
                     </label>
                   </div>
 
                   <div class="form__radio-group">
-                    <input class="form__radio-input" type="radio" id="small" name="year">
-                    <label class="form__radio-label" for="small">
+                    <input class="form__radio-input" type="radio" id="year3" name="year">
+                    <label class="form__radio-label" for="year3">
                       <span class="form__radio-button"></span>
                       3rd year
                     </label>
                   </div>
 
                   <div class="form__radio-group">
-                    <input class="form__radio-input" type="radio" id="small" name="year">
-                    <label class="form__radio-label" for="small">
+                    <input class="form__radio-input" type="radio" id="year4" name="year">
+                    <label class="form__radio-label" for="year4">
                       <span class="form__radio-button"></span>
                       4th year
                     </label>
@@ -534,6 +548,8 @@ Markup uses the BEM notation
         </div>
       </section>
     </main>
+
+    <!----------------------- Footer ---------------------------------->
     <footer class="footer">
       <div class="footer__logo-box">
         <!--TODO: DJANGO -->
