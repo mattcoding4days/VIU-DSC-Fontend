@@ -20,6 +20,7 @@ npm install live-server
 #### Then run the next two commands in the project root folder in seperate or tabbed terminals
 
 npm run compile:sass
+
 live-server
 
 #### The only caveat to this is you only need to run the compile:sass command if you plan on making changes to the code
