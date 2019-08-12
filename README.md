@@ -1,11 +1,19 @@
 # **VIU-DSC-App**
-### First things first, install npm on your machine
+### First things first:
+Until the mobile version is done, the full version of the App will pull the front-end
+from here. If you want to work on the Front-end, please submit a pull request and work on the development branch only please, as Lenz will pull only from the master.
+
+### Install npm on your system
 
 #### Arch Base
-sudo pacman -S npm
+
+````~~```~~console
+$ sudo pacman -S npm
 
 #### Debian Base
-sudo apt install npm
+```````
+```console
+$ sudo apt install npm
 
 ---
 
