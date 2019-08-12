@@ -1,19 +1,29 @@
 # **VIU-DSC-App**
 ### First things first:
 Until the mobile version is done, the full version of the App will pull the front-end
-from here. If you want to work on the Front-end, please submit a pull request and work on the development branch only please, as Lenz will pull only from the master.
+from here. If you want to work on the Front-end, please submit a pull request and work
+on the development branch only please, as Lenz will pull only from the master.
 
-### Install npm on your system
+### Install nodejs and npm on your system
 
 #### Arch Base
 
-````~~```~~console
-$ sudo pacman -S npm
-
-#### Debian Base
-```````
 ```console
+$ pacman -S nodejs npm
+```
+
+#### Debian/Ubuntu Base
+```
+$ sudo apt update
+$ sudo apt install nodejs
 $ sudo apt install npm
+```
+#### Mac OSX
+Install Home brew
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew install node
+```
 
 ---
 
