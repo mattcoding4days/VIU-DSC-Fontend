@@ -529,7 +529,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 65%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -539,7 +539,7 @@ body {
     width: 30%;
     display: table-cell; }
   .popup__right {
-    padding: 12rem 10rem;
+    padding: 15rem 5rem;
     width: 70%;
     display: table-cell;
     vertical-align: top; }
