@@ -59,8 +59,6 @@
   &__img {
     display: block;
     width: 100%;
-    transform: scale(.8);
-    border-radius: 3px;
   }
 
   &--logo {

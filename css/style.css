@@ -107,7 +107,7 @@ body {
   text-transform: uppercase; }
 
 .heading-tertiary-big {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -519,19 +519,18 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 4000;
   opacity: 0;
   visibility: hidden;
-  transition: all 1.2s; }
+  transition: all 1s; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    height: 20rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
@@ -547,8 +546,8 @@ body {
   .popup__img {
     display: block;
     width: 100%;
-    background-size: cover;
-    background-position: center; }
+    transform: scale(0.8);
+    border-radius: 3px; }
   .popup--logo {
     display: block;
     background-size: cover;
@@ -571,7 +570,7 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
-  .popup__close--1:link, .popup__close--1:visited {
+  .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
     top: 1rem;
@@ -580,63 +579,8 @@ body {
     text-decoration: none;
     display: inline-block;
     line-height: 1; }
-  .popup__close--1:hover {
-    color: #ffb74d; }
-  .popup__close--2:link, .popup__close--2:visited {
-    color: #777;
-    position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1; }
-  .popup__close--2:hover {
-    color: #81c784; }
-  .popup__close--3:link, .popup__close--3:visited {
-    color: #777;
-    position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1; }
-  .popup__close--3:hover {
+  .popup__close:hover {
     color: #64b5f6; }
-  .popup__close--4:link, .popup__close--4:visited {
-    color: #777;
-    position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1; }
-  .popup__close--4:hover {
-    color: #4fc3f7; }
-  .popup__close--5:link, .popup__close--5:visited {
-    color: #777;
-    position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1; }
-  .popup__close--5:hover {
-    color: #7986cb; }
-  .popup__close--6:link, .popup__close--6:visited {
-    color: #777;
-    position: absolute;
-    top: 1rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1; }
-  .popup__close--6:hover {
-    color: #f8bbd0; }
 
 /* Updates section */
 .updates {
