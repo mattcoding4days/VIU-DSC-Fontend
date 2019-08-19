@@ -12,9 +12,7 @@ $color-secondary-dark: #03a9f4;
 
 $color-indigo: #7986cb;
 $color-indigo-light: #5c6bc0;
-$color-indigo-dark: #3f51b5;
-
-$color-deep-purple: #b388ff;
+$color-indigo-dark: #3f51b5; $color-deep-purple: #b388ff;
 $color-deep-purple-light: #7c4dff;
 $color-deep-purple-dark: #651fff;
 
@@ -59,4 +57,5 @@ $large-font-size: 2.2rem;
 // Grid Variables
 $grid-width: 114rem;
 $gutter-verticle: 8rem;
+$gutter-verticle-small: 6rem;
 $gutter-horizontal: 6rem;
