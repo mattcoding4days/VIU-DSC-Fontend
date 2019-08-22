@@ -63,7 +63,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -360,7 +361,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb74d, #ffa726, #ff9800), url(../img/lenz.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #81c784, #66bb6a, #4caf50), url(../img/phill.jpg); }
+      background-image: linear-gradient(to right bottom, #81c784, #66bb6a, #4caf50), url(../img/faith.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #64b5f6, #42a5f5, #2196f3), url(../img/matt.png); }
     .card__picture--4 {
@@ -368,7 +369,7 @@ body {
     .card__picture--5 {
       background-image: linear-gradient(to right bottom, #7986cb, #5c6bc0, #3f51b5), url(../img/liam.jpg); }
     .card__picture--6 {
-      background-image: linear-gradient(to right bottom, #f8bbd0, #f48fb1, #f06292), url(../img/faith.jpg); }
+      background-image: linear-gradient(to right bottom, #f8bbd0, #f48fb1, #f06292), url(../img/phill.jpg); }
   .card__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -443,17 +444,17 @@ body {
       .card:hover .card__side--back {
         transform: rotateY(0); }
       .card__details {
-        padding: 1rem; }
+        padding: 3rem; }
       .card--cta {
         position: relative;
         top: 0;
         left: 0;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
+        padding: 7rem 4rem 1rem 4rem; }
       .card__icon-box {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         color: #fff; }
       .card__icon-text {
         display: none; } }
@@ -638,53 +639,65 @@ body {
   z-index: 4000;
   opacity: 0;
   visibility: hidden;
-  transition: all 1s; }
+  transition: all .3s; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%;
+    width: 75%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
   .popup__left {
-    width: 30%;
+    width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
-    padding: 15rem 5rem;
-    width: 70%;
+    padding: 3rem 5rem;
+    width: 66.6666667%;
     display: table-cell;
-    vertical-align: top; }
+    vertical-align: middle; }
   .popup__img {
     display: block;
     width: 100%;
+    height: auto;
     transform: scale(0.8);
     border-radius: 3px; }
-  .popup--logo {
+  .popup__img--logo {
     display: block;
-    background-size: cover;
-    width: 100%; }
+    width: 100%;
+    height: auto;
+    transform: scale(0.8); }
   .popup__text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 4rem;
-    -moz-column-count: 2;
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -webkit-column-count: 2;
+    -moz-column-count: 1;
+    -moz-column-rule: 2;
+    -moz-column-gap: 2rem;
+    -webkit-column-count: 1;
     -webkit-column-rule: 2px dotted #eee;
-    -webkit-column-gap: 4rem;
-    column-count: 2;
-    column-gap: 4rem;
+    -webkit-column-gap: 2rem;
+    column-count: 1;
     column-rule: 2px dotted #eee;
+    column-gap: 2rem;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    -webkit-hyphens: auto; }
+    -webkit-hyphens: auto;
+    hyphens: auto; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
@@ -953,6 +966,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1500;
+  left: -50%;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -960,7 +974,7 @@ body {
 .navigation__list {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 100%;
   list-style: none;
   transform: translate(-50%, -50%);
   text-align: center;

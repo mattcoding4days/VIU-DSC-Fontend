@@ -10,7 +10,8 @@
 html {
   // defines what 1rem is
   font-size: 62.5%;  // 1rem = 10px 10px/62.5%
-  
+  scroll-behavior: smooth;
+
   @include respond(tab-land) {
     // < 1200
     font-size: 56.25%;
@@ -25,6 +26,7 @@ html {
     font-size: 75%; 
   }
 }
+
 body {
   box-sizing: border-box;
 }
