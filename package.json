@@ -4,11 +4,11 @@
   "description": "Landing Page for the VIU Comp Sci Club",
   "main": "index.js",
   "scripts": {
-      "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Matt Williams",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^5.0.0"
   }
 }
