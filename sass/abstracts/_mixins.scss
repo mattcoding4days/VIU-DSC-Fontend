@@ -43,7 +43,7 @@
   - big-desktop
 
   Order: base " typography > general layout > page layout > components
- * */
+*/
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
